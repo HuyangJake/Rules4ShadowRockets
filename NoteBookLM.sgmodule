@@ -1,0 +1,11 @@
+#!name=NoteBookLM
+#!desc= NoteBookLM 专用
+
+
+[Rule]
+# 精确匹配优先
+DOMAIN,notebooklm.google.com,美国节点
+DOMAIN,notebooklm-pa.googleapis.com,美国节点
+
+# > > NotebookLM
+DOMAIN-KEYWORD,notebooklm.google,美国节点
