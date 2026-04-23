@@ -1,3 +1,5 @@
+#!name=Cursor
+#!desc= Cursor 专用
 [Rule]
 # 精确匹配优先
 
