@@ -1,0 +1,9 @@
+[Rule]
+# 精确匹配优先
+
+
+# > cursor
+DOMAIN-SUFFIX,cursor.sh,日本节点
+DOMAIN-SUFFIX,cursor.com,日本节点
+DOMAIN-SUFFIX,cursorapi.com,日本节点
+DOMAIN-SUFFIX,cursor-cdn.com,日本节点
