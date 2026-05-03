@@ -1,0 +1,39 @@
+#!name=PT 私有站
+#!desc=私有 Tracker / PT 站：引用 blackmatrix7 PrivateTracker 规则集，匹配域名默认直连（护种、固定 IP、降低异常代理出口风险）。若需走指定节点，将文末 DIRECT 全部替换为你的策略名（如「日本节点」）。
+
+[Rule]
+# 下列站点显式直连（优先于本模块内后续 RULE-SET）；多域名为该站常见/备用入口
+# 0Magnet
+DOMAIN-SUFFIX,0mag.net,DIRECT
+DOMAIN-SUFFIX,0magnet.com,DIRECT
+DOMAIN-SUFFIX,0mag.app,DIRECT
+# BTSCHOOL
+DOMAIN-SUFFIX,btschool.club,DIRECT
+# HaiDan 海胆
+DOMAIN-SUFFIX,haidan.video,DIRECT
+# HD Dolby
+DOMAIN-SUFFIX,hddolby.com,DIRECT
+# HDArea
+DOMAIN-SUFFIX,hdarea.co,DIRECT
+# HDTime
+DOMAIN-SUFFIX,hdtime.org,DIRECT
+# Insane Tracker
+DOMAIN-SUFFIX,newinsane.info,DIRECT
+# Mikan 蜜柑计划
+DOMAIN-SUFFIX,mikanani.me,DIRECT
+DOMAIN-SUFFIX,mikanime.tv,DIRECT
+DOMAIN-SUFFIX,formikanrss.top,DIRECT
+# MioBT
+DOMAIN-SUFFIX,miobt.com,DIRECT
+# OldToonsWorld（含 API 子域，DOMAIN-SUFFIX 一并覆盖）
+DOMAIN-SUFFIX,oldtoons.world,DIRECT
+# PTTime
+DOMAIN-SUFFIX,pttime.org,DIRECT
+# TorrentLeech
+DOMAIN-SUFFIX,torrentleech.cc,DIRECT
+DOMAIN-SUFFIX,torrentleech.org,DIRECT
+# 规则集维护说明：https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Shadowrocket/PrivateTracker
+# 该集合内含少量 DOMAIN-KEYWORD（如 torrent、announce），极少数无关站点可能被命中；若冲突可在本模块上方用更精确的 DOMAIN 规则覆盖，或自建精简列表。
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/PrivateTracker/PrivateTracker.list,DIRECT
+# 备用镜像（GitHub 拉取失败时可注释上一行、启用下一行）：
+# RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Shadowrocket/PrivateTracker/PrivateTracker.list,DIRECT
