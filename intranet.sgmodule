@@ -6,6 +6,8 @@
 # > 滴滴内网域名
 DOMAIN-SUFFIX,xiaojukeji.com,DIRECT
 DOMAIN-SUFFIX,didiglobal.com,DIRECT
+DOMAIN-SUFFIX,diditaxi.com,DIRECT
+DOMAIN-SUFFIX,didichuxing.com,DIRECT
 
 # > 如有其他内网域名，按以下格式继续添加：
-# DOMAIN-SUFFIX,your-intranet-domain.com,DIRECT
+# DOMAIN-SUFFIX,diditaxi.com,DIRECT
