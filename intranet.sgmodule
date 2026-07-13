@@ -1,0 +1,11 @@
+#!name=内网域名
+#!desc=内网/公司域名强制直连，配合 dns-direct-system=true 使用系统 DNS 解析。需置于所有模块最前加载。
+
+[Rule]
+# 精确匹配优先，内网域名直连后由系统 DNS 负责解析
+# > 滴滴内网域名
+DOMAIN-SUFFIX,xiaojukeji.com,DIRECT
+DOMAIN-SUFFIX,didiglobal.com,DIRECT
+
+# > 如有其他内网域名，按以下格式继续添加：
+# DOMAIN-SUFFIX,your-intranet-domain.com,DIRECT
