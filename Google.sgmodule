@@ -1,0 +1,8 @@
+#!name=Google
+#!desc=Google 专用，所有匹配流量使用「新加坡节点」代理分组。
+
+[Rule]
+# 规则集维护说明：https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Shadowrocket/Google
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Google/Google.list,新加坡节点
+# 备用镜像（GitHub 拉取失败时可注释上一行、启用下一行）：
+# RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Shadowrocket/Google/Google.list,新加坡节点
