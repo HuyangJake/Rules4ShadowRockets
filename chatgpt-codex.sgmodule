@@ -1,0 +1,26 @@
+#!name=ChatGPT & Codex
+#!desc=ChatGPT 和 OpenAI Codex 专用，走新加坡节点。需置于 normal.sgmodule 之前加载，以覆盖 AI 分组规则。
+
+[Rule]
+# 精确匹配优先
+# 注意：本模块需在 Shadowrocket「模块」列表中排在 normal.sgmodule 之前，
+# 否则 normal.sgmodule 的 RULE-SET AI 分组会优先匹配 openai.com 等域名。
+
+# > ChatGPT / OpenAI 主域
+DOMAIN-SUFFIX,openai.com,新加坡节点
+DOMAIN-SUFFIX,chatgpt.com,新加坡节点
+
+# > OpenAI CDN / 静态资源
+DOMAIN-SUFFIX,oaistatic.com,新加坡节点
+DOMAIN-SUFFIX,oaiusercontent.com,新加坡节点
+DOMAIN-SUFFIX,openaiapi-site.azureedge.net,新加坡节点
+
+# > Sora（OpenAI 视频生成）
+DOMAIN-SUFFIX,sora.com,新加坡节点
+
+# > ai.com（跳转 ChatGPT）
+DOMAIN-SUFFIX,ai.com,新加坡节点
+
+# > OpenAI Codex CLI / API（主要走 api.openai.com，已被上方 openai.com 覆盖）
+# > 如需单独显式声明 API 端点，可取消下一行注释：
+# DOMAIN,api.openai.com,新加坡节点
