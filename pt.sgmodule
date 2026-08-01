@@ -31,7 +31,7 @@ DOMAIN-SUFFIX,oldtoons.world,DIRECT
 DOMAIN-SUFFIX,pttime.org,DIRECT
 # TorrentLeech
 DOMAIN-SUFFIX,torrentleech.cc,DIRECT
-DOMAIN-SUFFIX,torrentleech.org,DIRECT
+DOMAIN-SUFFIX,torrentleech.org,PROXY
 # 规则集维护说明：https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Shadowrocket/PrivateTracker
 # 该集合内含少量 DOMAIN-KEYWORD（如 torrent、announce），极少数无关站点可能被命中；若冲突可在本模块上方用更精确的 DOMAIN 规则覆盖，或自建精简列表。
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/PrivateTracker/PrivateTracker.list,DIRECT
