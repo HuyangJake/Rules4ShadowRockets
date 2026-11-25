@@ -1,11 +1,22 @@
-#!name=NoteBookLM
-#!desc=NoteBookLM 专用，所有匹配流量使用「新加坡节点」代理分组。
 
+#!name=NoteBookLM
+#!desc=NotebookLM及相关Google AI服务分流
 
 [Rule]
-# 精确匹配优先
-DOMAIN,notebooklm.google.com,新加坡节点
-DOMAIN,notebooklm-pa.googleapis.com,新加坡节点
+# NotebookLM
+DOMAIN,notebook.google.com,新加坡节点
+DOMAIN-KEYWORD,notebooklm,新加坡节点
 
-# > > NotebookLM
-DOMAIN-KEYWORD,notebooklm.google,新加坡节点
+# Google AI API
+DOMAIN-KEYWORD,robinfrontend-pa,新加坡节点
+
+# Google 账号认证
+DOMAIN,accounts.google.com,新加坡节点
+DOMAIN,oauthaccountmanager.googleapis.com,新加坡节点
+DOMAIN,oauth2.googleapis.com,新加坡节点
+
+# Google 相关服务
+DOMAIN,growth-pa.googleapis.com,新加坡节点
+DOMAIN,signaler-pa.googleapis.com,新加坡节点
+DOMAIN,www.googleapis.com,新加坡节点
+DOMAIN,play.googleapis.com,新加坡节点
