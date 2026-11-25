@@ -1,22 +1,24 @@
-
 #!name=NoteBookLM
-#!desc=NotebookLM及相关Google AI服务分流
+#!desc=NotebookLM及相关Google AI服务统一使用美国节点
 
 [Rule]
 # NotebookLM
-DOMAIN,notebook.google.com,新加坡节点
-DOMAIN-KEYWORD,notebooklm,新加坡节点
+DOMAIN,notebook.google.com,美国节点
+DOMAIN-KEYWORD,notebooklm,美国节点
 
 # Google AI API
-DOMAIN-KEYWORD,robinfrontend-pa,新加坡节点
+DOMAIN-KEYWORD,robinfrontend-pa,美国节点
 
 # Google 账号认证
-DOMAIN,accounts.google.com,新加坡节点
-DOMAIN,oauthaccountmanager.googleapis.com,新加坡节点
-DOMAIN,oauth2.googleapis.com,新加坡节点
+DOMAIN,accounts.google.com,美国节点
+DOMAIN,oauthaccountmanager.googleapis.com,美国节点
+DOMAIN,oauth2.googleapis.com,美国节点
 
 # Google 相关服务
-DOMAIN,growth-pa.googleapis.com,新加坡节点
-DOMAIN,signaler-pa.googleapis.com,新加坡节点
-DOMAIN,www.googleapis.com,新加坡节点
-DOMAIN,play.googleapis.com,新加坡节点
+DOMAIN,growth-pa.googleapis.com,美国节点
+DOMAIN,signaler-pa.googleapis.com,美国节点
+DOMAIN,www.googleapis.com,美国节点
+DOMAIN,play.googleapis.com,美国节点
+
+# Google 通用 API（排查期间统一出口）
+DOMAIN-SUFFIX,googleapis.com,美国节点
